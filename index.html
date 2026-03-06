@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>US Weather 2017 – Original 13 Colonies</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <h1>US Weekly Weather 2017 – The Original 13 Colonies</h1>
+        <div id="controls" class="card">
+            <div class="control-row">
+                <label for="metricSelect">Metric:</label>
+                <select id="metricSelect"></select>
+
+                <label for="monthStartSelect">Month range:</label>
+                <select id="monthStartSelect"></select>
+                <span>to</span>
+                <select id="monthEndSelect"></select>
+
+                <label for="topNSelect">Top states:</label>
+                <select id="topNSelect">
+                    <option value="0">All</option>
+                    <option value="5">Top 5</option>
+                    <option value="8">Top 8</option>
+                    <option value="10">Top 10</option>
+                </select>
+            </div>
+            <div class="control-row" id="actions">
+                <button id="resetZoomBtn" type="button">Reset Zoom</button>
+                <button id="clearSelectionBtn" type="button">Clear Selection</button>
+            </div>
+        </div>
+
+        <section class="card chart-card">
+            <svg id="chart"></svg>
+        </section>
+
+        <div id="chart2-section" class="card chart-card" style="display:none;">
+            <h2 id="chart2-title">Weather Over Time</h2>
+            <p class="chart-note">Zoom or pan in the trend chart. Hover points for details; highlighted points mark minimum and maximum values.</p>
+            <svg id="chart2"></svg>
+        </div>
+
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>

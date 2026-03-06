@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f7fb;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+#subtitle {
+    margin: 0 0 14px;
+    color: #5a6779;
+    font-size: 14px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #dfe5ee;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 14px;
+}
+
+#controls {
+    margin: 12px 0 14px;
+}
+
+.control-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.control-row + .control-row {
+    margin-top: 10px;
+}
+
+#controls label {
+    font-size: 14px;
+    color: #455366;
+    font-weight: 600;
+}
+
+#metricSelect,
+#monthStartSelect,
+#monthEndSelect,
+#topNSelect {
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #cfd8e3;
+    background: #fff;
+}
+
+#actions button {
+    font-size: 13px;
+    border: 1px solid #cfd8e3;
+    background: #f7f9fc;
+    color: #334155;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#actions button:hover {
+    background: #eef3fb;
+}
+
+.chart-card {
+    padding: 12px 12px 8px;
+}
+
+#chart,
+#chart2 {
+    width: 100%;
+    display: block;
+    background: #fff;
+}
+
+#chart2-title {
+    margin: 2px 0 4px;
+    font-size: 18px;
+}
+
+.chart-note {
+    margin: 0 0 8px;
+    font-size: 13px;
+    color: #5c6c81;
+}
+
+.axis path,
+.axis line {
+    stroke: #c9d3e2;
+}
+
+.grid line {
+    stroke: #ebf0f7;
+}
+
+.grid path {
+    stroke-width: 0;
+}
